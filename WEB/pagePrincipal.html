@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Test_Selenium</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container py-4">
+            <header class="pb-3 mb-4 border-bottom">
+                <span class="fs-1">Smill Emmanuel Rivera Diaz</span>
+                <span class="fs-4">#2022-0134</span>
+            </header>
+
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Test ingresar credenciales de Usuario</h1>
+                    <p class="col-md-8 fs-4">
+                        <b>Descripción:</b> Esta prueba verifica si un usuario puede iniciar sesión correctamente con
+                        credenciales de usuario estándar.
+                        <br><b>Pasos de la prueba:</b>
+                        <ol>
+                            <li>Se carga la página de inicio de sesión.</li>
+                            <li>Se ingresan las credenciales de usuario estándar (usuario: admin, contraseña: admin).</li>
+                            <li>Se hace clic en el botón de inicio de sesión.
+                                Se espera 5 segundos para asegurarse de que el modal esté presente en el DOM.</li>
+                            <li>Se cierra el modal haciendo clic en el botón "Cerrar modal".
+                                Se verifica que no haya errores durante la ejecución.</li>
+                        </ol>
+                        <b>Resultado Esperado:</b> Se espera que la prueba sea exitosa si el usuario puede iniciar sesión y
+                        cerrar el modal correctamente.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6 fs-7">
+                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                        <h2>Test crear usuario</h2>
+                        <p>
+                            <b>Descripción:</b> Esta prueba verifica si es posible crear ungit pull origin Developer nuevo usuario proporcionando
+                            un nombre de usuario y una contraseña.
+                            <br><b>Pasos de la prueba:</b>
+                            <ol>
+                                <li>Se carga la página de creación de usuarios.</li>
+                                <li>Se ingresan las credenciales del administrador (usuario: admin, contraseña: aSDF234adsS@@@ED##E).</li>
+                                <li>Se hace clic en el botón "Añadir Usuario".</li>
+                                <li>Se espera 3 segundos para permitir que se complete la operación.</li>
+                                <li>Se verifica que no haya errores durante la ejecución.</li>
+                            </ol>
+                            <b>Resultado Esperado:</b> La prueba debe ser exitosa si el usuario puede crear un nuevo usuario
+                            correctamente.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 fs-7">
+                    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                        <h2>Test ingresar contraseña falsa</h2>
+                        <p>
+                            <b>Descripción:</b> Esta prueba verifica si el sistema valida correctamente la calidad de
+                            una contraseña al intentar crear un usuario.
+                            <br><b>Pasos de la prueba:</b>
+                            <ol>
+                                <li>Se carga la página de creación de usuarios.</li>
+                                <li>Se ingresan las credenciales del administrador (usuario: admin, contraseña: ContraseñaIncorrecta).</li>
+                                <li>Se hace clic en el botón "Añadir Usuario".</li>
+                                <li>Se intenta obtener y aceptar la alerta que se espera debido a la contraseña débil.</li>
+                                <li>Se verifica que no haya errores durante la ejecución.</li>
+                            </ol>
+                            <b>Resultado Esperado:</b> La prueba debe ser exitosa si se muestra la alerta correcta y se
+                            acepta, indicando que la contraseña es débil.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <footer class="pt-3 mt-4 text-body-secondary border-top">
+                <a class="d-block link-offset-1" href="https://getbootstrap.com/docs/5.0/examples/" target="_blank">
+                    ©copyright 2023
+                </a>
+            </footer>
+        </div>
+    </main>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
